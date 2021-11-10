@@ -13,9 +13,7 @@ df = pd.DataFrame(raw_json["features"])
 data_list = df["attributes"].tolist()
 df_final = pd.DataFrame(data_list)
 df_final.set_index("OBJECTID")
-<<<<<<< HEAD
 df_final = df_final[["Country_Region", "Province_State", "Lat", "Long_", "Confirmed", "Deaths", "Recovered", "Last_Update"]]
-=======
 df_final = df_final[["Country_Region", "Province_State", "Lat",
 "Long_", "Confirmed", "Deaths", "Recovered", "Last_Update"]]
 def convertTime(t):
@@ -51,4 +49,3 @@ top10_recovered = df_top10["Recovered"].tolist()
 df_top10 = df_total.nlargest(10, "Deaths")
 top10_countries_3 = df_top10["Country_Region"].tolist()
 top10_deaths = df_top10["Deaths"].tolist()
->>>>>>> branch-ticket-2
