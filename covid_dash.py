@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
@@ -16,4 +14,3 @@ data_list = df["attributes"].tolist()
 df_final = pd.DataFrame(data_list)
 df_final.set_index("OBJECTID")
 df_final = df_final[["Country_Region", "Province_State", "Lat", "Long_", "Confirmed", "Deaths", "Recovered", "Last_Update"]]
->>>>>>> branch-ticket-1
