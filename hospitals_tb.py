@@ -3,8 +3,6 @@ from folium.plugins import MarkerCluster
 import pandas as pd
 import requests
 
-<<<<<<< HEAD
-=======
 def json_to_df(data):
     elements = data['elements']
     places = {'category': [], 'lat': [], 'lon': [], 'name': [], 'address': []}
@@ -26,4 +24,3 @@ def json_to_df(data):
 
             
     return pd.DataFrame(places)
->>>>>>> branch-ticket-2
